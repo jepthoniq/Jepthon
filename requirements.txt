@@ -2,5 +2,3 @@ telethon
 git+https://github.com/sandy1709/py-googletrans
 git+https://github.com/yt-dlp/yt-dlp
 ipaddress
-moviepy
-imageio[ffmpeg]
